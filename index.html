@@ -1,0 +1,86 @@
+<!doctype html>
+<!-- 채운(Chaeun) 개발사 소개·앱 목록·연락처 페이지 -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>채운 Chaeun — 앱 개발</title>
+<meta name="description" content="채운(Chaeun)은 모바일 앱과 게임을 만드는 1인 개발사입니다. WeMemo, Aquarium 2048.">
+<style>
+  :root {
+    --bg: #f5f8fb; --card: #ffffff; --text: #14212e; --muted: #5b6b7a;
+    --line: #e2e8ef; --accent: #1f7fc4; --badge: #eaf3fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0c1620; --card: #14212e; --text: #e8eef4; --muted: #9aabbb;
+      --line: #22323f; --accent: #6bb8ef; --badge: #1b2d3d; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+  header h1 { margin: 0; font-size: 2rem; letter-spacing: -0.02em; }
+  header p { margin: 6px 0 0; color: var(--muted); }
+  h2 { margin: 44px 0 14px; font-size: 1.15rem; }
+  .app { display: flex; gap: 16px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 16px; padding: 18px; margin-bottom: 14px; }
+  .app img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  .app h3 { margin: 0; font-size: 1.05rem; }
+  .app p { margin: 4px 0 10px; color: var(--muted); font-size: 0.95rem; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .links a, .links span { font-size: 0.85rem; padding: 4px 12px; border-radius: 999px;
+    background: var(--badge); color: var(--accent); text-decoration: none; }
+  .links span { color: var(--muted); }
+  a { color: var(--accent); }
+  dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; margin: 0; }
+  dt { color: var(--muted); }
+  dd { margin: 0; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>채운 <span style="font-weight:400">Chaeun</span></h1>
+    <p>모바일 앱과 게임을 만드는 1인 개발사입니다.<br>An independent studio making mobile apps and games.</p>
+  </header>
+
+  <h2>앱 · Apps</h2>
+
+  <section class="app">
+    <img src="img/aquarium2048.jpg" alt="Aquarium 2048 아이콘">
+    <div>
+      <h3>Aquarium 2048</h3>
+      <p>2048 퍼즐을 풀면 바다 생물이 태어나 나만의 수족관을 채우는 힐링 퍼즐 게임.<br>
+        Merge tiles, hatch eggs and fill your aquarium with 60 real sea creatures.</p>
+      <div class="links">
+        <span>iOS · Android 출시 예정 (Coming soon)</span>
+        <a href="https://irradiated-paperback-334.notion.site/Aquarium-2048-Privacy-Policy-3eb7be19da4280d88094c82ff83c249d">개인정보처리방침 · Privacy Policy</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="app">
+    <img src="img/wememo.jpg" alt="WeMemo 아이콘">
+    <div>
+      <h3>WeMemo — 커플 위젯, 공유 메모</h3>
+      <p>두 사람만을 위한 프라이빗 위젯 메모장. 내가 쓴 메모가 상대방의 홈 화면 위젯에 바로 나타납니다.<br>
+        A private widget memo for two.</p>
+      <div class="links">
+        <a href="https://apps.apple.com/kr/app/id6757171340">App Store</a>
+        <a href="https://play.google.com/store/apps/details?id=com.sungjin.WeMemo2025v3">Google Play</a>
+      </div>
+    </div>
+  </section>
+
+  <h2>연락처 · Contact</h2>
+  <dl>
+    <dt>상호</dt><dd>채운 (Chaeun)</dd>
+    <dt>대표</dt><dd>박성진 (Seongjin Park)</dd>
+    <dt>이메일</dt><dd><a href="mailto:wememo.dev@gmail.com">wememo.dev@gmail.com</a></dd>
+  </dl>
+
+  <footer>© 2026 채운 Chaeun</footer>
+</main>
+</body>
+</html>
